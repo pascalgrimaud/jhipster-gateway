@@ -1,4 +1,4 @@
-FROM java:8
+FROM jhipster/jhipster
 
 ENV JHIPSTER_SLEEP 0
 ENV SPRING_PROFILES_ACTIVE=prod
