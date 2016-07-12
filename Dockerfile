@@ -5,7 +5,7 @@ ENV SPRING_PROFILES_ACTIVE=prod
 ENV SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/jhgateway?useUnicode=true&characterEncoding=utf8&useSSL=false
 
 # add source
-ADD . code/
+ADD . /code/
 # package the application and delete all lib
 RUN cd /code/ && \
     ./mvnw package -Pprod -DskipTests && \
