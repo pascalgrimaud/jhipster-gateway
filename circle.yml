@@ -6,6 +6,10 @@ machine:
     node:
         version: 4.5.0
 dependencies:
+    cache_directories:
+        - node
+        - node_modules
+        - ~/.m2
     override:
         - npm install -g npm
         - npm install -g bower gulp
